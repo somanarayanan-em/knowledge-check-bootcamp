@@ -318,7 +318,7 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 Requirement numbers follow [00-scope.md](../00-scope.md).
 
 - **R1** End-to-end process literacy: covered for the requirements stage
-- **R2** Hands-on execution of a stage: partly (tests knowing how to run the stage, not that the Champion drove it)
+- **R2** Hands-on execution of a stage: not in this quiz (it is assessed by practical sign-off, and this quiz tests knowledge only)
 - **R6** Failure-point recognition: covered for the requirements stage
 - **R7** Knowledge check record: contributes
 - **R3, R4, R5**: not in this quiz
@@ -332,28 +332,28 @@ Requirement numbers follow [00-scope.md](../00-scope.md).
 | 3 | ✓ | | | | | | ✓ |
 | 4 | ✓ | | | | | | ✓ |
 | 5 | ✓ | | | | | | ✓ |
-| 6 | | ✓ | | | | | ✓ |
+| 6 | ✓ | | | | | | ✓ |
 | 7 | | | | | | ✓ | ✓ |
-| 8 | | ✓ | | | | ✓ | ✓ |
-| 9 | | ✓ | | | | ✓ | ✓ |
+| 8 | | | | | | ✓ | ✓ |
+| 9 | | | | | | ✓ | ✓ |
 | 10 | ✓ | | | | | | ✓ |
-| 11 | | ✓ | | | | | ✓ |
+| 11 | ✓ | | | | | | ✓ |
 | 12 | | | | | | ✓ | ✓ |
-| 13 | | ✓ | | | | | ✓ |
-| 14 | | ✓ | | | | | ✓ |
+| 13 | ✓ | | | | | | ✓ |
+| 14 | ✓ | | | | | | ✓ |
 | 15 | | | | | | ✓ | ✓ |
 | 16 | | | | | | ✓ | ✓ |
-| 17 | | ✓ | | | | | ✓ |
-| 18 | | ✓ | | | | | ✓ |
+| 17 | | | | | | ✓ | ✓ |
+| 18 | | | | | | ✓ | ✓ |
 | 19 | | | | | | ✓ | ✓ |
 | 20 | | | | | | ✓ | ✓ |
-| **Questions** | 6 | 8 | 0 | 0 | 0 | 8 | 20 |
-| **Status** | Covered | Partly | Not in this quiz | Not in this quiz | Not in this quiz | Covered | Contributes |
+| **Questions** | 10 | 0 | 0 | 0 | 0 | 10 | 20 |
+| **Status** | Covered | Not in this quiz | Not in this quiz | Not in this quiz | Not in this quiz | Covered | Contributes |
 
 Key:
 
 - **R1** End-to-end process literacy
-- **R2** Hands-on execution of at least one stage (knowledge side only)
+- **R2** Hands-on execution of at least one stage (practical sign-off, not assessed in this quiz)
 - **R3** AIDE Skills Framework fluency
 - **R4** Knowledge Base / context repository setup
 - **R5** Operating model and role literacy

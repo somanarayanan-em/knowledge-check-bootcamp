@@ -322,7 +322,7 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 Requirement numbers follow [00-scope.md](../00-scope.md).
 
 - **R1** End-to-end process literacy: covered for the solution design stage
-- **R2** Hands-on execution of a stage: partly (tests knowing how to run the stage, not that the Champion drove it)
+- **R2** Hands-on execution of a stage: not in this quiz (it is assessed by practical sign-off, and this quiz tests knowledge only)
 - **R4** Knowledge base setup: conceptual touchpoint only (Q7 and Q8 cover what a knowledge base is and why it matters, not setup steps)
 - **R6** Failure-point recognition: covered for the solution design stage
 - **R7** Knowledge check record: contributes
@@ -336,31 +336,31 @@ Requirement numbers follow [00-scope.md](../00-scope.md).
 | 1             | ✓       |        |                  |                  |                  |         | ✓           |
 | 2             | ✓       |        |                  |                  |                  |         | ✓           |
 | 3             | ✓       |        |                  |                  |                  |         | ✓           |
-| 4             |         | ✓      |                  |                  |                  |         | ✓           |
-| 5             |         | ✓      |                  |                  |                  | ✓       | ✓           |
+| 4             | ✓       |        |                  |                  |                  |         | ✓           |
+| 5             |         |        |                  |                  |                  | ✓       | ✓           |
 | 6             |         |        |                  |                  |                  | ✓       | ✓           |
 | 7             | ✓       |        |                  | c                |                  |         | ✓           |
 | 8             | ✓       |        |                  | c                |                  |         | ✓           |
 | 9             |         |        |                  |                  |                  | ✓       | ✓           |
-| 10            |         | ✓      |                  |                  |                  | ✓       | ✓           |
-| 11            |         | ✓      |                  |                  |                  |         | ✓           |
-| 12            |         | ✓      |                  |                  |                  |         | ✓           |
+| 10            |         |        |                  |                  |                  | ✓       | ✓           |
+| 11            | ✓       |        |                  |                  |                  |         | ✓           |
+| 12            | ✓       |        |                  |                  |                  |         | ✓           |
 | 13            | ✓       |        |                  |                  |                  |         | ✓           |
 | 14            |         |        |                  |                  |                  | ✓       | ✓           |
 | 15            | ✓       |        |                  |                  |                  |         | ✓           |
-| 16            |         | ✓      |                  |                  |                  |         | ✓           |
+| 16            |         |        |                  |                  |                  | ✓       | ✓           |
 | 17            |         |        |                  |                  |                  | ✓       | ✓           |
 | 18            |         |        |                  |                  |                  | ✓       | ✓           |
 | 19            |         |        |                  |                  |                  | ✓       | ✓           |
 | 20            |         |        |                  |                  |                  | ✓       | ✓           |
-| **Questions** | 7       | 6      | 0                | 0 (2 conceptual) | 0                | 9       | 20          |
-| **Status**    | Covered | Partly | Not in this quiz | Conceptual only  | Not in this quiz | Covered | Contributes |
+| **Questions** | 10      | 0      | 0                | 0 (2 conceptual) | 0                | 10      | 20          |
+| **Status**    | Covered | Not in this quiz | Not in this quiz | Conceptual only  | Not in this quiz | Covered | Contributes |
 
 
 Key:
 
 - **R1** End-to-end process literacy
-- **R2** Hands-on execution of at least one stage (knowledge side only)
+- **R2** Hands-on execution of at least one stage (practical sign-off, not assessed in this quiz)
 - **R3** AIDE Skills Framework fluency
 - **R4** Knowledge Base / context repository setup (c = conceptual touchpoint only)
 - **R5** Operating model and role literacy
