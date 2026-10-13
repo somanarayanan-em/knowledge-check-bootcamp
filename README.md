@@ -7,7 +7,7 @@ Question content and planning documents for the individual knowledge check that 
 | **Owner** | Electric Mind (training team) |
 | **Audience** | Named Champions at CLIENT_A |
 | **Status** | Draft, in progress |
-| **Last updated** | 2026-10-02 |
+| **Last updated** | 2026-10-13 |
 
 > **Data handling:** This repo holds templates and question content only. Do not store completed Champion records (real names, scores, personas) here. Completed records go in an approved, access-controlled location. Use `CLIENT_A` for the client's name in all files. Questions: the Data Security Policy or helpdesk@electricmind.com.
 
@@ -21,7 +21,10 @@ knowledge-check/
     ├── phase-1-requirements.md        <- Requirements Package quiz bank (trainer copy)
     ├── phase-1-source-map.md          <- internal: slide source for each Phase 1 question
     ├── phase-2-solution-design.md     <- Solution Design Package quiz bank (trainer copy)
-    └── phase-2-source-map.md          <- internal: slide source and accuracy flags for Phase 2
+    ├── phase-2-source-map.md          <- internal: slide source and accuracy flags for Phase 2
+    ├── phase-3-implementation-part-1.md <- Implementation Package (Part 1) quiz bank (trainer copy)
+    ├── phase-3-implementation-part-1-source-map.md <- internal: slide source and accuracy flags for the Part 1 quiz
+    └── phase-3-implementation-source-map.md <- internal: slide source and accuracy flags for phase-3-implementation.md
 ```
 
 Start with [00-scope.md](00-scope.md). It explains what the knowledge check is for, what a written quiz can and cannot prove, and what is still to be built.
@@ -34,6 +37,7 @@ Each bank has 20 multiple-choice questions in five categories of four. Each ques
 |---|---|---|
 | [Phase 1: Requirements](question-bank/phase-1-requirements.md) | Deck 3, Requirements Package | Requirements vs solution design; why documents matter and how AI behaves; the workflow and verification; scaffolding before content; pitfalls and practical habits |
 | [Phase 2: Solution Design](question-bank/phase-2-solution-design.md) | Deck 4, Solution Design | Requirements to design and traceability; loading context before designing; technology constraints; what is in the package and how to build it; design pitfalls and judgment |
+| [Phase 3: Implementation Package (Part 1)](question-bank/phase-3-implementation-part-1.md) | Deck 5, Part 1 Implementation Package | What the package is and traceability; skills and templates; building the plan (workflow and phase size); the eight-section phase shape; planning pitfalls and judgment |
 
 ### Building a quiz from a bank
 
@@ -58,7 +62,7 @@ The scope document defines seven requirements. The question banks tag every ques
 | R6 | Failure-point recognition | Yes |
 | R7 | Demonstrated via knowledge check | The quiz is the gate and feeds the per-Champion record |
 
-Phases 1 and 2 are both tagged R1 and R6 (10 questions each).
+Phases 1, 2 and 3 are all tagged R1 and R6 (10 questions each). Phase 3 is tagged R1 (11) and R6 (9).
 
 ## Writing conventions
 
@@ -79,7 +83,7 @@ These are the rules the existing banks follow. Follow them when adding questions
 | # | Deliverable | Status |
 |---|---|---|
 | D1 | Blueprint (`01-blueprint.md`) | Not started |
-| D2 | Question bank, one file per competency | Phase 1 and Phase 2 banks drafted. Banks for the other decks and for R3, R4 and R5 still to do |
+| D2 | Question bank, one file per competency | Phase 1, 2 and 3 banks drafted (Phase 3 is a first draft). Banks for the other decks and for R3, R4 and R5 still to do |
 | D3 | Persona-specific scenarios | Not started. Needs the persona list (O3) |
 | D4 | Learner quiz, versions A and B | Not started |
 | D5 | Answer key and rationale | Not started (the banks hold answers and rationale for now) |
