@@ -6,8 +6,8 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 
 - This question bank contains 14 MCQs. They are not split into categories.
 - ***Use all 14 as the quiz. They mix understanding and scenario questions.***
-- Source: Deck 7, *Intro to A.I.D.E.* (v8).
-- **Naming convention for this bank:** unlike the other banks, these questions name skills and files (for example `/analyze-repository`, `/navigate-knowledge-base`, `AGENTS.md`) where the deck does. The questions test what each one is for and when to use it. They do not test memory of command names.
+- Source: *Intro to A.I.D.E.* (v8).
+- **Naming convention for this bank:** unlike the other banks, these questions name skills and files (for example `/analyze-repository`, `/navigate-knowledge-base`, `AGENTS.md`) where A.I.D.E. does. The questions test what each one is for and when to use it. They do not test memory of command names.
 
 ---
 
@@ -65,7 +65,7 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 
 **Answer:** B
 
-**Why:** A skill is a procedure for one task. `AGENTS.md` (called `CLAUDE.md` on some hosts) and local IDE rules hold behaviour that colours every request, skill invocations included. The deck's example is a local rule that says "never force-push", which holds across every session.
+**Why:** A skill is a procedure for one task. `AGENTS.md` (called `CLAUDE.md` on some hosts) and local IDE rules hold behaviour that colours every request, skill invocations included. For example, a local rule that says "never force-push" holds across every session.
 
 **Why not:** A is wrong because a skill runs only when its task comes up, and a guardrail needs to hold all the time. C loads only when needed, so it would not apply to every request. D works for one session but is easy to forget and does not persist.
 
@@ -95,9 +95,9 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 
 **Answer:** C
 
-**Why:** The deck calls this "AI proposes, human disposes". The creating skill drafts the document, and the review skill gives an independent check of it. The people stay the decision-makers: there are human gates in execution, and nothing merges itself.
+**Why:** A.I.D.E. calls this "AI proposes, human disposes". The creating skill drafts the document, and the review skill gives an independent check of it. The people stay the decision-makers: there are human gates in execution, and nothing merges itself.
 
-**Why not:** A and B hand the decision to a skill, which the deck rules out. D removes the decision altogether, but each stage ends with a person deciding before the next one starts.
+**Why not:** A and B hand the decision to a skill, which A.I.D.E. rules out. D removes the decision altogether, but each stage ends with a person deciding before the next one starts.
 
 ---
 
@@ -172,7 +172,7 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 
 **Why:** It is a map of how the whole solution works, assembled from the documents of every repository: an index, one file per component and a dependency graph. There is no vector database, no embeddings and nothing to operate. Agents read it with plain read, grep and glob, which is why it can live in a Git repository and be reviewed in ordinary pull requests.
 
-**Why not:** A and B describe infrastructure that the deck says is not needed. D is wrong because it holds documentation about the code, not the code itself.
+**Why not:** A and B describe infrastructure that a knowledge base does not need. D is wrong because it holds documentation about the code, not the code itself.
 
 ---
 
@@ -215,9 +215,9 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 
 **Answer:** B
 
-**Why:** Execution takes one increment at a time through test-driven development, the AI gate and then the human gate. It deliberately leaves the working tree uncommitted. The pull request skill asks again before it commits and before it pushes. The deck says nothing reaches a remote without the team saying yes.
+**Why:** Execution takes one increment at a time through test-driven development, the AI gate and then the human gate. It deliberately leaves the working tree uncommitted. The pull request skill asks again before it commits and before it pushes. Nothing reaches a remote without the team saying yes.
 
-**Why not:** A and C let work reach the remote or merge without a person deciding, which the deck rules out ("nothing merges itself"). D is wrong because the human gate is part of every increment, and the gate is only worth what the person at it puts in.
+**Why not:** A and C let work reach the remote or merge without a person deciding, which A.I.D.E. rules out ("nothing merges itself"). D is wrong because the human gate is part of every increment, and the gate is only worth what the person at it puts in.
 
 ---
 
