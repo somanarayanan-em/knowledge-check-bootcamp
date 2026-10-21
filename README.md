@@ -7,7 +7,7 @@ Question content and planning documents for the individual knowledge check that 
 | **Owner** | Electric Mind (training team) |
 | **Audience** | Named Champions at CLIENT_A |
 | **Status** | Draft, in progress |
-| **Last updated** | 2026-10-13 |
+| **Last updated** | 2026-10-21 |
 
 > **Data handling:** This repo holds templates and question content only. Do not store completed Champion records (real names, scores, personas) here. Completed records go in an approved, access-controlled location. Use `CLIENT_A` for the client's name in all files. Questions: the Data Security Policy or helpdesk@electricmind.com.
 
@@ -24,7 +24,9 @@ knowledge-check/
     ├── phase-2-source-map.md          <- internal: slide source and accuracy flags for Phase 2
     ├── phase-3-implementation-part-1.md <- Implementation Package (Part 1) quiz bank (trainer copy)
     ├── phase-3-implementation-part-1-source-map.md <- internal: slide source and accuracy flags for the Part 1 quiz
-    └── phase-3-implementation-source-map.md <- internal: slide source and accuracy flags for phase-3-implementation.md
+    ├── phase-3-implementation-source-map.md <- internal: slide source and accuracy flags for phase-3-implementation.md
+    ├── phase-5-aide.md                <- Intro to A.I.D.E. quiz bank (trainer copy, first draft, uncategorised)
+    └── phase-5-aide-source-map.md     <- internal: slide source and accuracy flags for the A.I.D.E. quiz
 ```
 
 Start with [00-scope.md](00-scope.md). It explains what the knowledge check is for, what a written quiz can and cannot prove, and what is still to be built.
@@ -38,6 +40,9 @@ Each bank has 20 multiple-choice questions in five categories of four. Each ques
 | [Phase 1: Requirements](question-bank/phase-1-requirements.md) | Deck 3, Requirements Package | Requirements vs solution design; why documents matter and how AI behaves; the workflow and verification; scaffolding before content; pitfalls and practical habits |
 | [Phase 2: Solution Design](question-bank/phase-2-solution-design.md) | Deck 4, Solution Design | Requirements to design and traceability; loading context before designing; technology constraints; what is in the package and how to build it; design pitfalls and judgment |
 | [Phase 3: Implementation Package (Part 1)](question-bank/phase-3-implementation-part-1.md) | Deck 5, Part 1 Implementation Package | What the package is and traceability; skills and templates; building the plan (workflow and phase size); the eight-section phase shape; planning pitfalls and judgment |
+| [Phase 5: Intro to A.I.D.E.](question-bank/phase-5-aide.md) | Deck 7, Intro to A.I.D.E. (v8) | Uncategorised, 14 questions: what A.I.D.E. is, skills and AGENTS.md, resuming a flow, reviews and who decides, the three flows, reverse engineering, the knowledge base, execution gates |
+
+The Phase 5 bank is the exception to the "five categories of four" rule. It has 14 questions and no categories, and is used whole as the quiz. It also relaxes the "No specific skills" rule below: it names skills and files where the deck does, and tests what each is for.
 
 ### Building a quiz from a bank
 
@@ -73,6 +78,7 @@ These are the rules the existing banks follow. Follow them when adding questions
 - **Option length:** keep the four options close in length, so the longest is not the answer.
 - **Plain language:** write for business and technical Champions alike. Persona-specific scenarios are a later deliverable.
 - **Generic technology:** do not name tools or stacks in questions. Say "a frontend framework" or "a database". Version examples may use numbers ("version 17 in one document, version 18 in another").
+- **No specific skills:** do not write a question about, or name, a specific skill or skill file (for example the Phase Execution Guide). Test the process and the judgment, not the tool that supports it.
 - **The team guides AI:** write questions so the team makes the decisions and AI works from what it is given. Avoid wording that has AI deciding or changing things on its own.
 - **No assumed cause:** do not word a question as if a problem always has one cause. For example, a gap may be in AI's summary or in the requirements themselves.
 - **Traceable:** every question traces to a slide or speaker note. Where a question extends the deck, say so in the source map.
@@ -83,7 +89,7 @@ These are the rules the existing banks follow. Follow them when adding questions
 | # | Deliverable | Status |
 |---|---|---|
 | D1 | Blueprint (`01-blueprint.md`) | Not started |
-| D2 | Question bank, one file per competency | Phase 1, 2 and 3 banks drafted (Phase 3 is a first draft). Banks for the other decks and for R3, R4 and R5 still to do |
+| D2 | Question bank, one file per competency | Phase 1, 2, 3 and 5 (A.I.D.E., R3) banks drafted (Phases 3 and 5 are first drafts). Banks for the other decks and for R4 and R5 still to do |
 | D3 | Persona-specific scenarios | Not started. Needs the persona list (O3) |
 | D4 | Learner quiz, versions A and B | Not started |
 | D5 | Answer key and rationale | Not started (the banks hold answers and rationale for now) |
