@@ -221,7 +221,63 @@ Trainer copy: contains answers and explanations. Do not share with Champions.
 
 ---
 
-## Training requirements covered
+## New criteria: rubric mapping (Rubrics 1, 3, 4)
+
+Questions are mapped to the three readiness rubrics. Primary means the question directly tests that rubric outcome. Supporting means it also uses the rubric while the main test sits in another column. None means it does not test that rubric.
+
+**Rubric outcomes used**
+
+- **Rubric 1. Explain the Model 2 lifecycle and operating model:** give an accurate, role-relevant account of how work moves through the method, including activities, artefacts, hand-offs and escalation paths.
+- **Rubric 3. Use FlowAI tools, context and knowledge assets effectively:** use the repository, the AI-assisted workflow, the knowledge base and context so the work is high quality.
+- **Rubric 4. Exercise quality judgment and responsible AI practices:** evaluate AI-assisted work critically, and keep a person accountable for what is allowed to proceed.
+
+## New criteria: mapping matrix
+
+| Question | Rubric 1 / Lifecycle | Rubric 3 / Tools and context | Rubric 4 / Quality judgment | Why it maps |
+| -------- | -------------------- | ---------------------------- | --------------------------- | ----------- |
+| 1. What is A.I.D.E.? (C) | None | Primary | None | Tests what the framework is: skills as markdown files that the existing agent follows. |
+| 2. Finding out how to use a skill (A) | None | Primary | None | Tests using the assistant and `SKILL.md` to learn which skill fits a goal. |
+| 3. How the agent chooses a skill (B) | None | Primary | None | Tests how skills are discovered: name and "when to use it" description in the frontmatter. |
+| 4. Where an always-on guardrail belongs (B) | None | Primary | Supporting | Tests `AGENTS.md` and local rules as context that applies to every request. The guardrail also keeps the agent inside agreed limits. |
+| 5. Resuming on Monday (C) | Primary | Supporting | None | Tests hand-offs between skills through saved documents. The documents are also the context the next skill reads. |
+| 6. Who decides the work is good enough (C) | Supporting | None | Primary | Tests "AI proposes, human disposes". The review skill informs, and the team decides at each stage gate. |
+| 7. Feature in an unfamiliar system (B) | Primary | Supporting | None | Tests choosing the brownfield route. Grounding in reverse engineering and the knowledge base comes first. |
+| 8. Small, scoped fix (A) | Primary | None | None | Tests the quick-dev path against the full path for the size of the change. |
+| 9. Unfamiliar repository (C) | None | Primary | Supporting | Tests `/analyze-repository` as the dispatcher. Avoids quietly producing the wrong document. |
+| 10. Internal and consumer docs (A) | Supporting | Primary | None | Tests the two document sets, their readers and their destinations (source repository and knowledge base). |
+| 11. What a knowledge base is (C) | None | Primary | None | Tests the knowledge base as plain markdown in its own repository, reviewed through pull requests. |
+| 12. Finding what a change affects (B) | None | Primary | None | Tests `/navigate-knowledge-base` as the way to load only the components a change touches. |
+| 13. Stale knowledge base after a merge (A) | None | Primary | Supporting | Tests keeping the knowledge base current. A named steward stays accountable for its quality. |
+| 14. After the AI gate passes (B) | Supporting | None | Primary | Tests the human gate. Nothing is committed, pushed or merged without the team's yes. |
+
+## New criteria: coverage
+
+| Rubric | Primary | Supporting | Status |
+| ------ | ------- | ---------- | ------ |
+| 1. Lifecycle and operating model | 5, 7, 8 | 6, 10, 14 | Covered |
+| 3. Tools, context and knowledge assets | 1, 2, 3, 4, 9, 10, 11, 12, 13 | 5, 7 | Covered |
+| 4. Quality judgment and responsible AI | 6, 14 | 4, 9, 13 | Covered, two primary questions |
+
+Notes:
+
+- Hands-on execution of a stage is not assessed in this quiz. It is covered by practical sign-off, and this quiz tests knowledge only.
+- Escalation paths (Rubric 1) and role literacy are not tested here and need source material.
+
+## Crosswalk: previous to new criteria
+
+| Previous criterion | New rubric |
+| ------------------ | ---------- |
+| R1 End-to-end process literacy | Rubric 1 |
+| R2 Hands-on execution | No equivalent (practical sign-off) |
+| R3 Skills Framework fluency | Rubric 3 |
+| R4 Knowledge base setup | Rubric 3 |
+| R5 Operating model and role literacy | Rubric 1 (not tested here) |
+| R6 Failure-point recognition | Rubric 1 and Rubric 4 |
+| R7 Knowledge check record | No equivalent |
+
+---
+
+## Previous criteria: training requirements covered (R1–R7)
 
 Requirement numbers follow [00-scope.md](../00-scope.md).
 
@@ -233,7 +289,7 @@ Requirement numbers follow [00-scope.md](../00-scope.md).
 - **R7** Knowledge check record: contributes
 - **R5**: not in this quiz (needs source material)
 
-## Training requirement traceability matrix
+## Previous criteria: traceability matrix (R1–R7)
 
 | Question      | R1 | R2 | R3      | R4                    | R5 | R6      | R7          |
 | ------------- | -- | -- | ------- | --------------------- | -- | ------- | ----------- |
